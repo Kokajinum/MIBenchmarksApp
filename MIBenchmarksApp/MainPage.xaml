@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MIBenchmarksApp.MainPage"
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui">
+    <HorizontalStackLayout HeightRequest="100" HorizontalOptions="Center">
+        <Button Text="Spustit generování" x:Name="_StartBtn" Clicked="_StartBtn_Clicked"></Button>
+        <ActivityIndicator x:Name="_Indicator" IsVisible="true"></ActivityIndicator>
+        <Button Text="KP" Clicked="Button_Clicked"></Button>
+        <ActivityIndicator x:Name="_Indicator2" IsVisible="true"></ActivityIndicator>
+    </HorizontalStackLayout>
+</ContentPage>
